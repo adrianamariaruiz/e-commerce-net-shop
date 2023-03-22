@@ -25,12 +25,16 @@ const Navbar = () => {
         <nav>
             
             <img src={logo} alt='logo imagen' className='logoImage'/>
+            <div>
+                <p>Promotions</p>  
+            </div>
             <div className='divSelect'>
-                <p>Promotions</p> 
                 <label htmlFor="category">Categories</label>          
                 <select defaultValue='All Categories' name='category' onChange={handleChange} className="SelectCategory"> 
-                    {categoryApi.map((category) => 
-                    <option value={category} key={category} disabled>{category}</option> )}
+                    {
+                    categoryApi.map((category) => 
+                        <option value={category} key={category} disabled>{category}</option> )
+                    }
                 </select>
             </div>
             <div className='registerDiv'>

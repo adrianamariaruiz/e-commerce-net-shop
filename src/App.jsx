@@ -8,7 +8,7 @@ export const App = () => {
   return (
     <div>
       <Navbar/>
-      <h1>NetShop</h1>
+
       <Products/>
     </div>
   )
