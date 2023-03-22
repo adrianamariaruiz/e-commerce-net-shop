@@ -1,9 +1,71 @@
-.container-cards{
-  columns: 3 200px; 
-  column-gap: 10px;
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-img{
+h1{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2rem;
+  margin-left: 20rem;
+  margin-right: auto;
+}
+.container-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.container-images  {
   width: 100%;
-  margin-bottom: 10px;
+  display: block;
+  margin: 20px auto 20px auto;
+  padding: 20px;
+  padding: 40px;
+  box-shadow: 0px 0px 3px #008ECC;
+  border-radius: 8px;
+  background-color: white;
+} 
+img {
+  width: auto; 
+  max-height: 100px; 
+  padding-bottom: 20px;
+}
+.price {
+  margin-top: 40rem;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.h2{
+  margin-top: 4rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+article{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+button {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: #008ECC;
+  color: white;
+  border-radius: 8px;
+  margin-top: 35px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: none;
 }

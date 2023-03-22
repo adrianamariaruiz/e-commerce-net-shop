@@ -1,5 +1,5 @@
 import './Products.css';
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Products = () => {
   const [productsApi, setProductsApi] = useState([]);
@@ -15,17 +15,18 @@ const Products = () => {
 
   return (
     <>
-      <h1>productos</h1>
+      <h1>Choose your favorite products</h1>
 
       <article className="container-cards">
         {productsApi.map((product) => (
-          <div key={product.id}>
+          <div  className="container-images" key={product.id}>
             <div>
               <img src={product.images[0]} alt="Product image" />
             </div>
             <h2>{product.title}</h2>
-            <span>{product.price}</span>
-          </div>
+            <span className='price'>${product.price}</span> <br />
+          <button className="add-button">Add to Cart</button>
+          </div>          
         ))}
       </article>
     </>

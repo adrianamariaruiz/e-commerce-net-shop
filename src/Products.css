@@ -1,0 +1,20 @@
+
+.container-images{
+    display:flex;
+}
+
+
+img{
+  width: 100%;
+  /* margin-bottom: 10px; */
+    display: block;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+}
+.price {
+    margin-top: 40rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 40px;
+}
